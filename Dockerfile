@@ -1,4 +1,4 @@
-FROM openshift/ruby-20-centos7
+FROM ruby:2.2-slim
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r redmine && useradd -r -g redmine redmine
